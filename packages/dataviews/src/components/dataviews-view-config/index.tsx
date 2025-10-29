@@ -100,6 +100,7 @@ export function ViewTypeMenu() {
 									case 'grid':
 									case 'table':
 									case 'pickerGrid':
+									case 'timeline':
 										const viewWithoutLayout = { ...view };
 										if ( 'layout' in viewWithoutLayout ) {
 											delete viewWithoutLayout.layout;

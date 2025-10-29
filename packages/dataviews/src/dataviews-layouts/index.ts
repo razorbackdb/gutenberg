@@ -7,6 +7,7 @@ import {
 	category,
 	formatListBullets,
 	formatListBulletsRTL,
+	timeToRead,
 } from '@wordpress/icons';
 
 /**
@@ -15,11 +16,13 @@ import {
 import ViewTable from './table';
 import ViewGrid from './grid';
 import ViewList from './list';
+import ViewTimeline from './timeline';
 import ViewPickerGrid from './picker-grid';
 import {
 	LAYOUT_GRID,
 	LAYOUT_LIST,
 	LAYOUT_TABLE,
+	LAYOUT_TIMELINE,
 	LAYOUT_PICKER_GRID,
 } from '../constants';
 import PreviewSizePicker from './utils/preview-size-picker';
@@ -45,6 +48,12 @@ export const VIEW_LAYOUTS = [
 		label: __( 'List' ),
 		component: ViewList,
 		icon: isRTL() ? formatListBulletsRTL : formatListBullets,
+	},
+	{
+		type: LAYOUT_TIMELINE,
+		label: __( 'Timeline' ),
+		component: ViewTimeline,
+		icon: timeToRead,
 	},
 	{
 		type: LAYOUT_PICKER_GRID,
