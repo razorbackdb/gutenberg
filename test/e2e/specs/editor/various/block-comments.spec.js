@@ -273,7 +273,7 @@ test.describe( 'Block Comments', () => {
 		await expect( replyTextbox ).toBeVisible();
 	} );
 
-	test.describe( 'Keyboard navigation', () => {
+	test.describe( 'Keyboard', () => {
 		test( 'should expand or collapse a comment with Enter key', async ( {
 			editor,
 			page,
@@ -654,6 +654,41 @@ test.describe( 'Block Comments', () => {
 					.getByRole( 'region', { name: 'Editor settings' } )
 					.getByRole( 'button', { name: 'Actions' } )
 			).toBeFocused();
+		} );
+
+		test( 'can add a note using form shortcut', async ( {
+			editor,
+			page,
+			pageUtils,
+		} ) => {
+			await editor.insertBlock( {
+				name: 'core/paragraph',
+				attributes: { content: 'Testing block comments' },
+			} );
+			await editor.clickBlockOptionsMenuItem( 'Add note' );
+			const textbox = page.getByRole( 'textbox', {
+				name: 'New note',
+				exact: true,
+			} );
+			const thread = page
+				.getByRole( 'region', { name: 'Editor settings' } )
+				.getByRole( 'listitem', {
+					name: 'Note: A test comment',
+				} );
+
+			await textbox.fill( '' );
+			await pageUtils.pressKeys( 'primary+Enter' );
+			await expect(
+				textbox,
+				`doesn't sumbit an empty form and focus remains in the textbox`
+			).toBeFocused();
+
+			await textbox.fill( 'A test comment' );
+			await pageUtils.pressKeys( 'primary+Enter' );
+
+			await expect( thread ).toBeVisible();
+			// Should focus the newly added comment thread.
+			await expect( thread ).toBeFocused();
 		} );
 	} );
 } );
