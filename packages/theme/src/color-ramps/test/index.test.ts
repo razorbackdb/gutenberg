@@ -31,7 +31,7 @@ describe( 'buildRamps', () => {
 					inGamut: true,
 				} );
 				const seedComputed = serialize(
-					to( parse( ramp.ramp.surface2.color ), sRGB ),
+					to( parse( ramp.ramp.surface2 ), sRGB ),
 					{
 						format: 'hex',
 						inGamut: true,
@@ -86,7 +86,7 @@ describe( 'buildRamps', () => {
 						}
 					);
 					const seedComputed = serialize(
-						to( parse( ramp.ramp.bgFill1.color ), sRGB ),
+						to( parse( ramp.ramp.bgFill1 ), sRGB ),
 						{
 							format: 'hex',
 							inGamut: true,

@@ -177,7 +177,7 @@ function colorRampCSS( ramp: RampResult, prefix: string ): Entry[] {
 	return [ ...Object.entries( ramp.ramp ) ].map(
 		( [ tokenName, tokenValue ] ) => [
 			`${ prefix }${ toKebabCase( tokenName ) }`,
-			tokenValue.color,
+			tokenValue,
 		]
 	);
 }

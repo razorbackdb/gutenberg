@@ -68,10 +68,8 @@ function calculateRamp( {
 		value: number;
 	};
 } ) {
-	const rampResults = {} as Record<
-		keyof Ramp,
-		{ color: string; warning: boolean }
-	>;
+	const rampResults = {} as Record< keyof Ramp, string >;
+	let warnings: string[] | undefined;
 	let SATISFIED_ALL_CONTRAST_REQUIREMENTS = true;
 	let UNSATISFIED_DIRECTION: RampDirection = 'lighter';
 	let MAX_WEIGHTED_DEFICIT = 0;
@@ -109,10 +107,7 @@ function calculateRamp( {
 				if ( candidateContrast >= adjustedTarget ) {
 					// Store the reused color
 					calculatedColors.set( stepName, candidateColor );
-					rampResults[ stepName ] = {
-						color: getColorString( candidateColor ),
-						warning: false,
-					};
+					rampResults[ stepName ] = getColorString( candidateColor );
 
 					continue; // Skip to next step
 				}
@@ -201,15 +196,17 @@ function calculateRamp( {
 		calculatedColors.set( stepName, searchResults.color );
 
 		// Add to results
-		rampResults[ stepName ] = {
-			color: getColorString( searchResults.color ),
-			warning:
-				! contrast.ignoreWhenAdjustingSeed && ! searchResults.reached,
-		};
+		rampResults[ stepName ] = getColorString( searchResults.color );
+
+		if ( ! searchResults.reached && ! contrast.ignoreWhenAdjustingSeed ) {
+			warnings ??= [];
+			warnings.push( stepName );
+		}
 	}
 
 	return {
 		rampResults,
+		warnings,
 		SATISFIED_ALL_CONTRAST_REQUIREMENTS,
 		UNSATISFIED_DIRECTION,
 	};
@@ -260,6 +257,7 @@ export function buildRamp(
 	// Calculate the ramp with the initial seed.
 	const {
 		rampResults,
+		warnings,
 		SATISFIED_ALL_CONTRAST_REQUIREMENTS,
 		UNSATISFIED_DIRECTION,
 	} = calculateRamp( {
@@ -273,6 +271,7 @@ export function buildRamp(
 	const toReturn = {
 		ramp: rampResults,
 		direction: mainDir,
+		warnings,
 	} as RampResult;
 
 	if (
