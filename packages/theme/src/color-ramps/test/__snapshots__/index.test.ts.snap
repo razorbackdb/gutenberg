@@ -19,95 +19,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#3858e9",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#4569fb",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#c3d9ff",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#1b1e26",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#1f2dbf",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#314dde",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#8cafff",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#e3f0ff",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#576fb5",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#778cc3",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#8cafff",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#c7dcff",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#040925",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#071034",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#0d1948",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#152460",
-            "warning": false,
-          },
+          "bgFill1": "#3858e9",
+          "bgFill2": "#4569fb",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#c3d9ff",
+          "bgFillInverted2": "#eff0f2",
+          "fgFill": "#eff0f2",
+          "fgFillDark": "#eff0f2",
+          "fgFillInverted": "#1b1e26",
+          "fgSurface1": "#1f2dbf",
+          "fgSurface2": "#314dde",
+          "fgSurface3": "#8cafff",
+          "fgSurface4": "#e3f0ff",
+          "stroke1": "#576fb5",
+          "stroke2": "#778cc3",
+          "stroke3": "#8cafff",
+          "stroke4": "#c7dcff",
+          "surface1": "#000",
+          "surface2": "#000",
+          "surface3": "#040925",
+          "surface4": "#071034",
+          "surface5": "#0d1948",
+          "surface6": "#152460",
         },
+        "warnings": undefined,
       },
     },
     {
@@ -126,95 +61,34 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#3858e9",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#4569fb",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#d7e7ff",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "fgFill": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#1b1e26",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#6b93ff",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#9abaff",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#d2e4ff",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "stroke1": {
-            "color": "#8497c9",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#aab8da",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#d2e4ff",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "surface1": {
-            "color": "#3652c1",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#3b58c3",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#405dc4",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#3f5fd5",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#4c6ac9",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#5876cd",
-            "warning": false,
-          },
+          "bgFill1": "#3858e9",
+          "bgFill2": "#4569fb",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#d7e7ff",
+          "bgFillInverted2": "#fff",
+          "fgFill": "#eff0f2",
+          "fgFillDark": "#eff0f2",
+          "fgFillInverted": "#1b1e26",
+          "fgSurface1": "#6b93ff",
+          "fgSurface2": "#9abaff",
+          "fgSurface3": "#d2e4ff",
+          "fgSurface4": "#fff",
+          "stroke1": "#8497c9",
+          "stroke2": "#aab8da",
+          "stroke3": "#d2e4ff",
+          "stroke4": "#fff",
+          "surface1": "#3652c1",
+          "surface2": "#3b58c3",
+          "surface3": "#405dc4",
+          "surface4": "#3f5fd5",
+          "surface5": "#4c6ac9",
+          "surface6": "#5876cd",
         },
+        "warnings": [
+          "fgSurface4",
+          "stroke4",
+          "bgFillInverted2",
+        ],
       },
     },
     {
@@ -233,95 +107,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "darker",
         "ramp": {
-          "bgFill1": {
-            "color": "#3858e9",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#2c47d7",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#1b1e26",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#1401a4",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#1b1e26",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#eff0f2",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#89adff",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#5d86ff",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#3858e9",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#080071",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#92a4cf",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#6f85c0",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#3858e9",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#2236c7",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#f5f7fc",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#edf1fa",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#e0e6f6",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#ccd6f0",
-            "warning": false,
-          },
+          "bgFill1": "#3858e9",
+          "bgFill2": "#2c47d7",
+          "bgFillDark": "#1b1e26",
+          "bgFillInverted1": "#1401a4",
+          "bgFillInverted2": "#1b1e26",
+          "fgFill": "#eff0f2",
+          "fgFillDark": "#eff0f2",
+          "fgFillInverted": "#eff0f2",
+          "fgSurface1": "#89adff",
+          "fgSurface2": "#5d86ff",
+          "fgSurface3": "#3858e9",
+          "fgSurface4": "#080071",
+          "stroke1": "#92a4cf",
+          "stroke2": "#6f85c0",
+          "stroke3": "#3858e9",
+          "stroke4": "#2236c7",
+          "surface1": "#f5f7fc",
+          "surface2": "#fff",
+          "surface3": "#fff",
+          "surface4": "#edf1fa",
+          "surface5": "#e0e6f6",
+          "surface6": "#ccd6f0",
         },
+        "warnings": undefined,
       },
     },
   ],
@@ -342,95 +151,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#cc1818",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#df332c",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#ffc9be",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#231c1b",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#900",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#c10009",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#ff7f6f",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#ffe4dd",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#ad4e44",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#cc695d",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#ff7f6f",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#ffbfb2",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#1b0504",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#270907",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#38100c",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#4c1914",
-            "warning": false,
-          },
+          "bgFill1": "#cc1818",
+          "bgFill2": "#df332c",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#ffc9be",
+          "bgFillInverted2": "#f2efef",
+          "fgFill": "#f2efef",
+          "fgFillDark": "#f2efef",
+          "fgFillInverted": "#231c1b",
+          "fgSurface1": "#900",
+          "fgSurface2": "#c10009",
+          "fgSurface3": "#ff7f6f",
+          "fgSurface4": "#ffe4dd",
+          "stroke1": "#ad4e44",
+          "stroke2": "#cc695d",
+          "stroke3": "#ff7f6f",
+          "stroke4": "#ffbfb2",
+          "surface1": "#000",
+          "surface2": "#000",
+          "surface3": "#1b0504",
+          "surface4": "#270907",
+          "surface5": "#38100c",
+          "surface6": "#4c1914",
         },
+        "warnings": undefined,
       },
     },
     {
@@ -449,95 +193,34 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#cc1818",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#df332c",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#ffddd5",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "fgFill": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#231c1b",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#ff5b4e",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#ff9b8b",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#ffd5cc",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "stroke1": {
-            "color": "#d77e72",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#e3a79f",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#ffd5cc",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "surface1": {
-            "color": "#9b3b32",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#a23e35",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#a94138",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#af433a",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#ba483e",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#cb4f44",
-            "warning": false,
-          },
+          "bgFill1": "#cc1818",
+          "bgFill2": "#df332c",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#ffddd5",
+          "bgFillInverted2": "#fff",
+          "fgFill": "#f2efef",
+          "fgFillDark": "#f2efef",
+          "fgFillInverted": "#231c1b",
+          "fgSurface1": "#ff5b4e",
+          "fgSurface2": "#ff9b8b",
+          "fgSurface3": "#ffd5cc",
+          "fgSurface4": "#fff",
+          "stroke1": "#d77e72",
+          "stroke2": "#e3a79f",
+          "stroke3": "#ffd5cc",
+          "stroke4": "#fff",
+          "surface1": "#9b3b32",
+          "surface2": "#a23e35",
+          "surface3": "#a94138",
+          "surface4": "#af433a",
+          "surface5": "#ba483e",
+          "surface6": "#cb4f44",
         },
+        "warnings": [
+          "fgSurface4",
+          "stroke4",
+          "bgFillInverted2",
+        ],
       },
     },
     {
@@ -556,95 +239,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "darker",
         "ramp": {
-          "bgFill1": {
-            "color": "#cc1818",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#b90000",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#231c1b",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#6d0000",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#231c1b",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#f2efef",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#ff8a7a",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#fc5145",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#cc1818",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#4a0000",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#dc9085",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#cd695d",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#cc1818",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#a40000",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#fdf5f4",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#fceeec",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#f9e1dd",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#f6cdc7",
-            "warning": false,
-          },
+          "bgFill1": "#cc1818",
+          "bgFill2": "#b90000",
+          "bgFillDark": "#231c1b",
+          "bgFillInverted1": "#6d0000",
+          "bgFillInverted2": "#231c1b",
+          "fgFill": "#f2efef",
+          "fgFillDark": "#f2efef",
+          "fgFillInverted": "#f2efef",
+          "fgSurface1": "#ff8a7a",
+          "fgSurface2": "#fc5145",
+          "fgSurface3": "#cc1818",
+          "fgSurface4": "#4a0000",
+          "stroke1": "#dc9085",
+          "stroke2": "#cd695d",
+          "stroke3": "#cc1818",
+          "stroke4": "#a40000",
+          "surface1": "#fdf5f4",
+          "surface2": "#fff",
+          "surface3": "#fff",
+          "surface4": "#fceeec",
+          "surface5": "#f9e1dd",
+          "surface6": "#f6cdc7",
         },
+        "warnings": undefined,
       },
     },
   ],
@@ -665,95 +283,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#c7a589",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#dcb99d",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#f5d2b5",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#f1f0ee",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f1f0ee",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#5c3f26",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#77583e",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#c7a589",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#ffe9cb",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#7e6a59",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#9c836f",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#c7a589",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#f1ceb1",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#000",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#100a06",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#18110b",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#251b13",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#33271d",
-            "warning": false,
-          },
+          "bgFill1": "#c7a589",
+          "bgFill2": "#dcb99d",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#f5d2b5",
+          "bgFillInverted2": "#f1f0ee",
+          "fgFill": "#1f1e1c",
+          "fgFillDark": "#f1f0ee",
+          "fgFillInverted": "#1f1e1c",
+          "fgSurface1": "#5c3f26",
+          "fgSurface2": "#77583e",
+          "fgSurface3": "#c7a589",
+          "fgSurface4": "#ffe9cb",
+          "stroke1": "#7e6a59",
+          "stroke2": "#9c836f",
+          "stroke3": "#c7a589",
+          "stroke4": "#f1ceb1",
+          "surface1": "#000",
+          "surface2": "#000",
+          "surface3": "#100a06",
+          "surface4": "#18110b",
+          "surface5": "#251b13",
+          "surface6": "#33271d",
         },
+        "warnings": undefined,
       },
     },
     {
@@ -772,95 +325,34 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "lighter",
         "ramp": {
-          "bgFill1": {
-            "color": "#c7a589",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#dcb99d",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#000",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#ffe0c2",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "fgFill": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f1f0ee",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#b69579",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#dab79b",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#ffdfc2",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "stroke1": {
-            "color": "#b1957e",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#d3b59d",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#ffdfc2",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#fff",
-            "warning": true,
-          },
-          "surface1": {
-            "color": "#715946",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#765e49",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#7b624c",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#806650",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#886c55",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#95765d",
-            "warning": false,
-          },
+          "bgFill1": "#c7a589",
+          "bgFill2": "#dcb99d",
+          "bgFillDark": "#000",
+          "bgFillInverted1": "#ffe0c2",
+          "bgFillInverted2": "#fff",
+          "fgFill": "#1f1e1c",
+          "fgFillDark": "#f1f0ee",
+          "fgFillInverted": "#1f1e1c",
+          "fgSurface1": "#b69579",
+          "fgSurface2": "#dab79b",
+          "fgSurface3": "#ffdfc2",
+          "fgSurface4": "#fff",
+          "stroke1": "#b1957e",
+          "stroke2": "#d3b59d",
+          "stroke3": "#ffdfc2",
+          "stroke4": "#fff",
+          "surface1": "#715946",
+          "surface2": "#765e49",
+          "surface3": "#7b624c",
+          "surface4": "#806650",
+          "surface5": "#886c55",
+          "surface6": "#95765d",
         },
+        "warnings": [
+          "fgSurface4",
+          "stroke4",
+          "bgFillInverted2",
+        ],
       },
     },
     {
@@ -879,95 +371,30 @@ exports[`buildRamps accent ramp snapshots 1`] = `
       "output": {
         "direction": "darker",
         "ramp": {
-          "bgFill1": {
-            "color": "#c7a589",
-            "warning": false,
-          },
-          "bgFill2": {
-            "color": "#b49277",
-            "warning": false,
-          },
-          "bgFillDark": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "bgFillInverted1": {
-            "color": "#442910",
-            "warning": false,
-          },
-          "bgFillInverted2": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgFill": {
-            "color": "#1f1e1c",
-            "warning": false,
-          },
-          "fgFillDark": {
-            "color": "#f1f0ee",
-            "warning": false,
-          },
-          "fgFillInverted": {
-            "color": "#f1f0ee",
-            "warning": false,
-          },
-          "fgSurface1": {
-            "color": "#cba88c",
-            "warning": false,
-          },
-          "fgSurface2": {
-            "color": "#a9886d",
-            "warning": false,
-          },
-          "fgSurface3": {
-            "color": "#8a6b50",
-            "warning": false,
-          },
-          "fgSurface4": {
-            "color": "#301700",
-            "warning": false,
-          },
-          "stroke1": {
-            "color": "#caaa90",
-            "warning": false,
-          },
-          "stroke2": {
-            "color": "#a78c77",
-            "warning": false,
-          },
-          "stroke3": {
-            "color": "#8a6b50",
-            "warning": false,
-          },
-          "stroke4": {
-            "color": "#6c4e34",
-            "warning": false,
-          },
-          "surface1": {
-            "color": "#faf6f3",
-            "warning": false,
-          },
-          "surface2": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface3": {
-            "color": "#fff",
-            "warning": false,
-          },
-          "surface4": {
-            "color": "#f7f0ea",
-            "warning": false,
-          },
-          "surface5": {
-            "color": "#f1e4d9",
-            "warning": false,
-          },
-          "surface6": {
-            "color": "#e9d2c0",
-            "warning": false,
-          },
+          "bgFill1": "#c7a589",
+          "bgFill2": "#b49277",
+          "bgFillDark": "#1f1e1c",
+          "bgFillInverted1": "#442910",
+          "bgFillInverted2": "#1f1e1c",
+          "fgFill": "#1f1e1c",
+          "fgFillDark": "#f1f0ee",
+          "fgFillInverted": "#f1f0ee",
+          "fgSurface1": "#cba88c",
+          "fgSurface2": "#a9886d",
+          "fgSurface3": "#8a6b50",
+          "fgSurface4": "#301700",
+          "stroke1": "#caaa90",
+          "stroke2": "#a78c77",
+          "stroke3": "#8a6b50",
+          "stroke4": "#6c4e34",
+          "surface1": "#faf6f3",
+          "surface2": "#fff",
+          "surface3": "#fff",
+          "surface4": "#f7f0ea",
+          "surface5": "#f1e4d9",
+          "surface6": "#e9d2c0",
         },
+        "warnings": undefined,
       },
     },
   ],
@@ -985,95 +412,30 @@ exports[`buildRamps background ramp snapshots 1`] = `
     "output": {
       "direction": "lighter",
       "ramp": {
-        "bgFill1": {
-          "color": "#b3b3b3",
-          "warning": false,
-        },
-        "bgFill2": {
-          "color": "#c7c7c7",
-          "warning": false,
-        },
-        "bgFillDark": {
-          "color": "#000",
-          "warning": false,
-        },
-        "bgFillInverted1": {
-          "color": "#d9d9d9",
-          "warning": false,
-        },
-        "bgFillInverted2": {
-          "color": "#f1f1f1",
-          "warning": false,
-        },
-        "fgFill": {
-          "color": "#1e1e1e",
-          "warning": false,
-        },
-        "fgFillDark": {
-          "color": "#f0f0f0",
-          "warning": false,
-        },
-        "fgFillInverted": {
-          "color": "#1e1e1e",
-          "warning": false,
-        },
-        "fgSurface1": {
-          "color": "#818181",
-          "warning": false,
-        },
-        "fgSurface2": {
-          "color": "#a0a0a0",
-          "warning": false,
-        },
-        "fgSurface3": {
-          "color": "#c4c4c4",
-          "warning": false,
-        },
-        "fgSurface4": {
-          "color": "#f1f1f1",
-          "warning": false,
-        },
-        "stroke1": {
-          "color": "#656565",
-          "warning": false,
-        },
-        "stroke2": {
-          "color": "#7f7f7f",
-          "warning": false,
-        },
-        "stroke3": {
-          "color": "#a0a0a0",
-          "warning": false,
-        },
-        "stroke4": {
-          "color": "#c8c8c8",
-          "warning": false,
-        },
-        "surface1": {
-          "color": "#484848",
-          "warning": false,
-        },
-        "surface2": {
-          "color": "#4d4c4d",
-          "warning": false,
-        },
-        "surface3": {
-          "color": "#515151",
-          "warning": false,
-        },
-        "surface4": {
-          "color": "#545454",
-          "warning": false,
-        },
-        "surface5": {
-          "color": "#5b5b5b",
-          "warning": false,
-        },
-        "surface6": {
-          "color": "#646464",
-          "warning": false,
-        },
+        "bgFill1": "#b3b3b3",
+        "bgFill2": "#c7c7c7",
+        "bgFillDark": "#000",
+        "bgFillInverted1": "#d9d9d9",
+        "bgFillInverted2": "#f1f1f1",
+        "fgFill": "#1e1e1e",
+        "fgFillDark": "#f0f0f0",
+        "fgFillInverted": "#1e1e1e",
+        "fgSurface1": "#818181",
+        "fgSurface2": "#a0a0a0",
+        "fgSurface3": "#c4c4c4",
+        "fgSurface4": "#f1f1f1",
+        "stroke1": "#656565",
+        "stroke2": "#7f7f7f",
+        "stroke3": "#a0a0a0",
+        "stroke4": "#c8c8c8",
+        "surface1": "#484848",
+        "surface2": "#4d4c4d",
+        "surface3": "#515151",
+        "surface4": "#545454",
+        "surface5": "#5b5b5b",
+        "surface6": "#646464",
       },
+      "warnings": undefined,
     },
   },
   {
@@ -1085,95 +447,30 @@ exports[`buildRamps background ramp snapshots 1`] = `
     "output": {
       "direction": "darker",
       "ramp": {
-        "bgFill1": {
-          "color": "#005f00",
-          "warning": false,
-        },
-        "bgFill2": {
-          "color": "#004e00",
-          "warning": false,
-        },
-        "bgFillDark": {
-          "color": "#1c1f1c",
-          "warning": false,
-        },
-        "bgFillInverted1": {
-          "color": "#003a00",
-          "warning": false,
-        },
-        "bgFillInverted2": {
-          "color": "#1c1f1c",
-          "warning": false,
-        },
-        "fgFill": {
-          "color": "#edf2ed",
-          "warning": false,
-        },
-        "fgFillDark": {
-          "color": "#edf2ed",
-          "warning": false,
-        },
-        "fgFillInverted": {
-          "color": "#edf2ed",
-          "warning": false,
-        },
-        "fgSurface1": {
-          "color": "#707b6f",
-          "warning": false,
-        },
-        "fgSurface2": {
-          "color": "#575f56",
-          "warning": false,
-        },
-        "fgSurface3": {
-          "color": "#3f453e",
-          "warning": false,
-        },
-        "fgSurface4": {
-          "color": "#1c1f1c",
-          "warning": false,
-        },
-        "stroke1": {
-          "color": "#6ea36d",
-          "warning": false,
-        },
-        "stroke2": {
-          "color": "#598558",
-          "warning": false,
-        },
-        "stroke3": {
-          "color": "#436542",
-          "warning": false,
-        },
-        "stroke4": {
-          "color": "#2e472d",
-          "warning": false,
-        },
-        "surface1": {
-          "color": "#68c467",
-          "warning": false,
-        },
-        "surface2": {
-          "color": "#6c6",
-          "warning": false,
-        },
-        "surface3": {
-          "color": "#6fd26f",
-          "warning": false,
-        },
-        "surface4": {
-          "color": "#65bf65",
-          "warning": false,
-        },
-        "surface5": {
-          "color": "#62b561",
-          "warning": false,
-        },
-        "surface6": {
-          "color": "#5da75d",
-          "warning": false,
-        },
+        "bgFill1": "#005f00",
+        "bgFill2": "#004e00",
+        "bgFillDark": "#1c1f1c",
+        "bgFillInverted1": "#003a00",
+        "bgFillInverted2": "#1c1f1c",
+        "fgFill": "#edf2ed",
+        "fgFillDark": "#edf2ed",
+        "fgFillInverted": "#edf2ed",
+        "fgSurface1": "#707b6f",
+        "fgSurface2": "#575f56",
+        "fgSurface3": "#3f453e",
+        "fgSurface4": "#1c1f1c",
+        "stroke1": "#6ea36d",
+        "stroke2": "#598558",
+        "stroke3": "#436542",
+        "stroke4": "#2e472d",
+        "surface1": "#68c467",
+        "surface2": "#6c6",
+        "surface3": "#6fd26f",
+        "surface4": "#65bf65",
+        "surface5": "#62b561",
+        "surface6": "#5da75d",
       },
+      "warnings": undefined,
     },
   },
   {
@@ -1185,95 +482,30 @@ exports[`buildRamps background ramp snapshots 1`] = `
     "output": {
       "direction": "lighter",
       "ramp": {
-        "bgFill1": {
-          "color": "#508bff",
-          "warning": false,
-        },
-        "bgFill2": {
-          "color": "#6ca0ff",
-          "warning": false,
-        },
-        "bgFillDark": {
-          "color": "#000",
-          "warning": false,
-        },
-        "bgFillInverted1": {
-          "color": "#bfdaff",
-          "warning": false,
-        },
-        "bgFillInverted2": {
-          "color": "#eff0f2",
-          "warning": false,
-        },
-        "fgFill": {
-          "color": "#0b1b41",
-          "warning": false,
-        },
-        "fgFillDark": {
-          "color": "#eff0f2",
-          "warning": false,
-        },
-        "fgFillInverted": {
-          "color": "#0b1b41",
-          "warning": false,
-        },
-        "fgSurface1": {
-          "color": "#505d78",
-          "warning": false,
-        },
-        "fgSurface2": {
-          "color": "#6f788b",
-          "warning": false,
-        },
-        "fgSurface3": {
-          "color": "#afb4be",
-          "warning": false,
-        },
-        "fgSurface4": {
-          "color": "#eff0f2",
-          "warning": false,
-        },
-        "stroke1": {
-          "color": "#1f3e88",
-          "warning": false,
-        },
-        "stroke2": {
-          "color": "#2f56b1",
-          "warning": false,
-        },
-        "stroke3": {
-          "color": "#5477c0",
-          "warning": false,
-        },
-        "stroke4": {
-          "color": "#7f99cf",
-          "warning": false,
-        },
-        "surface1": {
-          "color": "#041c65",
-          "warning": false,
-        },
-        "surface2": {
-          "color": "#009",
-          "warning": false,
-        },
-        "surface3": {
-          "color": "#06247d",
-          "warning": false,
-        },
-        "surface4": {
-          "color": "#072886",
-          "warning": false,
-        },
-        "surface5": {
-          "color": "#0a2e93",
-          "warning": false,
-        },
-        "surface6": {
-          "color": "#1038a4",
-          "warning": false,
-        },
+        "bgFill1": "#508bff",
+        "bgFill2": "#6ca0ff",
+        "bgFillDark": "#000",
+        "bgFillInverted1": "#bfdaff",
+        "bgFillInverted2": "#eff0f2",
+        "fgFill": "#0b1b41",
+        "fgFillDark": "#eff0f2",
+        "fgFillInverted": "#0b1b41",
+        "fgSurface1": "#505d78",
+        "fgSurface2": "#6f788b",
+        "fgSurface3": "#afb4be",
+        "fgSurface4": "#eff0f2",
+        "stroke1": "#1f3e88",
+        "stroke2": "#2f56b1",
+        "stroke3": "#5477c0",
+        "stroke4": "#7f99cf",
+        "surface1": "#041c65",
+        "surface2": "#009",
+        "surface3": "#06247d",
+        "surface4": "#072886",
+        "surface5": "#0a2e93",
+        "surface6": "#1038a4",
       },
+      "warnings": undefined,
     },
   },
 ]
