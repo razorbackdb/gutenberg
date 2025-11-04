@@ -558,8 +558,10 @@ export const InfiniteScroll = () => {
 
 const TimelineComponent = ( {
 	showMedia = 'true',
+	showGroupFieldLabel = 'true',
 }: {
 	showMedia: 'true' | 'false';
+	showGroupFieldLabel: 'true' | 'false';
 } ) => {
 	const [ view, setView ] = useState< View >( {
 		type: LAYOUT_TIMELINE,
@@ -575,17 +577,24 @@ const TimelineComponent = ( {
 		showMedia: showMedia === 'true',
 		layout: {
 			eventField: 'datetime',
+			showGroupFieldLabel: showGroupFieldLabel === 'true',
 		},
 	} );
 	useEffect( () => {
-		const setShowMedia = showMedia === 'true';
-		if ( setShowMedia !== view.showMedia ) {
-			setView( {
-				...view,
-				showMedia: setShowMedia,
-			} );
-		}
-	}, [ view, showMedia ] );
+		setView( ( prevView ) => {
+			const prevLayout =
+				prevView.type === LAYOUT_TIMELINE ? prevView.layout : {};
+			return {
+				...prevView,
+				type: LAYOUT_TIMELINE,
+				showMedia: showMedia === 'true',
+				layout: {
+					...prevLayout,
+					showGroupFieldLabel: showGroupFieldLabel === 'true',
+				},
+			};
+		} );
+	}, [ showMedia, showGroupFieldLabel ] );
 
 	// Custom fields with render methods for date and datetime
 	const timelineFields: Field< SpaceObject >[] = fields.map( ( field ) => {
@@ -664,6 +673,7 @@ export const Timeline = {
 	render: TimelineComponent,
 	args: {
 		showMedia: 'true',
+		showGroupFieldLabel: 'false',
 	},
 	argTypes: {
 		showMedia: {
@@ -671,6 +681,13 @@ export const Timeline = {
 			options: [ 'true', 'false' ],
 			defaultValue: 'true',
 			description: 'Whether the media is shown in the timeline',
+		},
+		showGroupFieldLabel: {
+			control: 'select',
+			options: [ 'true', 'false' ],
+			defaultValue: 'true',
+			description:
+				'Whether the group field label is shown in the timeline',
 		},
 	},
 };
