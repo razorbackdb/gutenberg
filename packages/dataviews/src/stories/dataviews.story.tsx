@@ -73,6 +73,7 @@ const defaultLayouts = {
 	[ LAYOUT_TABLE ]: {},
 	[ LAYOUT_GRID ]: {},
 	[ LAYOUT_LIST ]: {},
+	[ LAYOUT_TIMELINE ]: {},
 };
 
 export const Default = ( { perPageSizes = [ 10, 25, 50, 100 ] } ) => {
@@ -425,6 +426,7 @@ export const GroupByLayout = () => {
 				[ LAYOUT_GRID ]: {},
 				[ LAYOUT_LIST ]: {},
 				[ LAYOUT_TABLE ]: {},
+				[ LAYOUT_TIMELINE ]: {},
 			} }
 		/>
 	);
@@ -550,6 +552,7 @@ export const InfiniteScroll = () => {
 					[ LAYOUT_GRID ]: {},
 					[ LAYOUT_LIST ]: {},
 					[ LAYOUT_TABLE ]: {},
+					[ LAYOUT_TIMELINE ]: {},
 				} }
 			/>
 		</>
