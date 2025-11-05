@@ -1,6 +1,6 @@
 <?php
 
-class Gutenberg_REST_Static_Templates_Controller extends Gutenberg_REST_Templates_Controller_7_0 {
+class Gutenberg_REST_Registered_Templates_Controller extends Gutenberg_REST_Templates_Controller_7_0 {
 	public function __construct() {
 		parent::__construct( 'wp_template' );
 		$this->rest_base = 'registered-templates';

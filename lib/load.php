@@ -51,7 +51,7 @@ if ( class_exists( 'WP_REST_Controller' ) ) {
 	 * extend the templates activation controller.
 	 */
 	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-templates-controller.php';
-	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-static-templates-controller.php';
+	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-registered-templates-controller.php';
 
 	// WordPress 6.9 compat.
 	require __DIR__ . '/compat/wordpress-6.9/template-activate.php';
