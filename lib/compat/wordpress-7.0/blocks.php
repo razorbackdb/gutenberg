@@ -22,9 +22,6 @@ if ( ! function_exists( 'gutenberg_resolve_pattern_blocks' ) ) {
         static $seen_refs = array();
         $i                = 0;
         while ( $i < count( $blocks ) ) {
-            error_log( '!!gutenberg_resolve_pattern_blocks>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>' );
-            error_log( print_r( $blocks[ $i ]['blockName'], true ) );
-
             if ( 'core/pattern' === $blocks[ $i ]['blockName'] ) {
                 $attrs = $blocks[ $i ]['attrs'];
 

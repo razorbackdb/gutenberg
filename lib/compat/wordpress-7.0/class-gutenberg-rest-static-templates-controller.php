@@ -1,7 +1,8 @@
 <?php
 
-class Gutenberg_REST_Static_Templates_Controller extends WP_REST_Templates_Controller {
+class Gutenberg_REST_Static_Templates_Controller extends Gutenberg_REST_Templates_Controller_7_0 {
 	public function __construct() {
+		parent::__construct( 'wp_template' );
 		$this->rest_base = 'registered-templates';
 		$this->namespace = 'wp/v2';
 	}
@@ -19,7 +20,12 @@ class Gutenberg_REST_Static_Templates_Controller extends WP_REST_Templates_Contr
 					'args'                => $this->get_collection_params(),
 				),
 				'schema' => array( $this, 'get_public_item_schema' ),
-			)
+			),
+			/*
+			 * $override is set to true to ensure Gutenberg's route takes precedence
+			 * over WordPress Core's automatic registration.
+			 */
+			true
 		);
 
 		// Lists/updates a single template based on the given id.
@@ -54,7 +60,12 @@ class Gutenberg_REST_Static_Templates_Controller extends WP_REST_Templates_Contr
 					),
 				),
 				'schema' => array( $this, 'get_public_item_schema' ),
-			)
+			),
+			/*
+			 * $override is set to true to ensure Gutenberg's route takes precedence
+			 * over WordPress Core's automatic registration.
+			 */
+			true
 		);
 	}
 

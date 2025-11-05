@@ -44,8 +44,16 @@ if ( class_exists( 'WP_REST_Controller' ) ) {
 	// WordPress 6.8 compat.
 	require __DIR__ . '/compat/wordpress-6.8/rest-api.php';
 
+	// WordPress 7.0 compat
+	/*
+	 * These 7.0 compat classes are used to extend the templates controller.
+	 * They are placed before the 6.9 compat classes so that they can be used to
+	 * extend the templates activation controller.
+	 */
+	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-templates-controller.php';
+	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-static-templates-controller.php';
+
 	// WordPress 6.9 compat.
-	require __DIR__ . '/compat/wordpress-6.9/class-gutenberg-rest-static-templates-controller.php';
 	require __DIR__ . '/compat/wordpress-6.9/template-activate.php';
 	require __DIR__ . '/compat/wordpress-6.9/block-bindings.php';
 	require __DIR__ . '/compat/wordpress-6.9/post-data-block-bindings.php';
@@ -93,6 +101,7 @@ require __DIR__ . '/compat/wordpress-6.9/client-assets.php';
 
 // WordPress 7.0 compat.
 require __DIR__ . '/compat/wordpress-7.0/php-only-blocks.php';
+require __DIR__ . '/compat/wordpress-7.0/blocks.php';
 
 // Experimental features.
 require __DIR__ . '/experimental/block-editor-settings-mobile.php';
