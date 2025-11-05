@@ -46,6 +46,9 @@ if ( ! function_exists( 'gutenberg_resolve_pattern_blocks' ) ) {
                     ++$i;
                     continue;
                 }
+                //////////////////////////////
+                // START CORE MODIFICATIONS //
+                //////////////////////////////
                 $blocks_to_insert = parse_blocks( trim( $pattern['content'] ) );
 
                 // For single-root patterns, add the pattern name to make this a pattern instance in the editor.
@@ -68,6 +71,9 @@ if ( ! function_exists( 'gutenberg_resolve_pattern_blocks' ) ) {
 
                     $blocks_to_insert[0]['attrs']['metadata'] = $metadata;
                 }
+                //////////////////////////////
+                // END CORE MODIFICATIONS //
+                //////////////////////////////
 
                 $seen_refs[ $slug ] = true;
                 $prev_inner_content = $inner_content;

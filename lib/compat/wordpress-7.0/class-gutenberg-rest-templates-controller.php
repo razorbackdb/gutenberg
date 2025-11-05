@@ -1,4 +1,17 @@
 <?php
+/**
+ * REST API: Gutenberg_REST_Templates_Controller_7_0 class.
+ * 
+ * Note: This extension exists only so that get_item(s) returns pattern blocks resolved by `gutenberg_resolve_pattern_blocks`.
+ *
+ * There are NO changes to the class itself.
+ *
+ * The private methods `get_wp_templates_original_source_field` and
+ * `get_wp_templates_author_text_field` have been copied over from the parent class
+ * because they cannot be accessed otherwise.
+ *
+ * @package    Gutenberg
+ */
 
 class Gutenberg_REST_Templates_Controller_7_0 extends WP_REST_Templates_Controller {
 	/**
@@ -13,8 +26,6 @@ class Gutenberg_REST_Templates_Controller_7_0 extends WP_REST_Templates_Controll
 	 * @return WP_REST_Response Response object.
 	 */
 	public function prepare_item_for_response( $item, $request ) {
-
-		error_log( '!!prepare_item_for_response %%%%%%%%%%%' );
 		// Don't prepare the response body for HEAD requests.
 		if ( $request->is_method( 'HEAD' ) ) {
 			return new WP_REST_Response( array() );
