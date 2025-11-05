@@ -1,7 +1,7 @@
 <?php
 /**
  * REST API: Gutenberg_REST_Templates_Controller_7_0 class.
- * 
+ *
  * Note: This extension exists only so that get_item(s) returns pattern blocks resolved by `gutenberg_resolve_pattern_blocks`.
  *
  * There are NO changes to the class itself.

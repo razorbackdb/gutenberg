@@ -14,10 +14,10 @@
  */
 class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 
-    public function set_up() {
+	public function set_up() {
 		parent::set_up();
 
-        register_block_pattern(
+		register_block_pattern(
 			'core/single-root',
 			array(
 				'title'       => 'Single Root Pattern',
@@ -58,9 +58,9 @@ class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 				'categories'  => array( 'featured' ),
 			)
 		);
-    }
+	}
 
-    public function tear_down() {
+	public function tear_down() {
 		unregister_block_pattern( 'core/single-root' );
 		unregister_block_pattern( 'core/single-root-with-forbidden-chars-in-attrs' );
 		unregister_block_pattern( 'core/with-attrs' );
@@ -88,22 +88,22 @@ class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 	public function data_should_resolve_pattern_blocks_as_expected() {
 		return array(
 			// Resolves the single-root pattern and adds metadata.
-			'single-root pattern'            => array(
+			'single-root pattern'           => array(
 				'<!-- wp:pattern {"slug":"core/single-root"} /-->',
 				'<!-- wp:paragraph {"metadata":{"patternName":"core/single-root","name":"Single Root Pattern","description":"A single root pattern.","categories":["text"]}} -->Single root content<!-- /wp:paragraph -->',
 			),
 			// Existing attributes are preserved when adding metadata.
-			'existing attributes preserved'  => array(
+			'existing attributes preserved' => array(
 				'<!-- wp:pattern {"slug":"core/with-attrs"} /-->',
 				'<!-- wp:paragraph {"className":"custom-class","metadata":{"patternName":"core/with-attrs","name":"Pattern With Attrs","description":"A pattern with existing attributes."}} -->Content<!-- /wp:paragraph -->',
 			),
 			// Resolves the nested single-root pattern and adds metadata.
-			'nested single-root pattern'     => array(
+			'nested single-root pattern'    => array(
 				'<!-- wp:pattern {"slug":"core/nested-single"} /-->',
 				'<!-- wp:group {"metadata":{"patternName":"core/nested-single","name":"Nested Pattern","description":"A nested single root pattern.","categories":["featured"]}} --><!-- wp:paragraph -->Nested content<!-- /wp:paragraph --><!-- wp:paragraph {"metadata":{"patternName":"core/single-root","name":"Single Root Pattern","description":"A single root pattern.","categories":["text"]}} -->Single root content<!-- /wp:paragraph --><!-- /wp:group -->',
 			),
 			// Sanitizes fields.
-			'sanitized pattern attrs'        => array(
+			'sanitized pattern attrs'       => array(
 				'<!-- wp:pattern {"slug":"core/single-root-with-forbidden-chars-in-attrs"} /-->',
 				'<!-- wp:paragraph {"metadata":{"patternName":"core/single-root-with-forbidden-chars-in-attrs","name":"Single Root Pattern","description":"A single root pattern.","categories":["text","bad\'); DROP TABLE wp_posts;\u002d\u002d","","evil\u0000null byte","category with html tags"]}} -->Single root content<!-- /wp:paragraph -->',
 			),

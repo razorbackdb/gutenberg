@@ -50,7 +50,7 @@ if ( class_exists( 'WP_REST_Controller' ) ) {
 	 * They are placed before the 6.9 compat classes so that they can be used to
 	 * extend the templates activation controller.
 	 */
-	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-templates-controller.php';
+	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-templates-controller-7-0.php';
 	require __DIR__ . '/compat/wordpress-7.0/class-gutenberg-rest-registered-templates-controller.php';
 
 	// WordPress 6.9 compat.
