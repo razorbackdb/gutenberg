@@ -51,22 +51,25 @@ if ( ! function_exists( 'gutenberg_resolve_pattern_blocks' ) ) {
 				//////////////////////////////
 				$blocks_to_insert = parse_blocks( trim( $pattern['content'] ) );
 
-				// For single-root patterns, add the pattern name to make this a pattern instance in the editor.
+				/*
+				* For single-root patterns, add the pattern name to make this a pattern instance in the editor.
+				* If the pattern has metadata, merge it with the existing metadata.
+				*/
 				if ( count( $blocks_to_insert ) === 1 ) {
-					$metadata = array(
-						'patternName' => $slug,
-					);
+					$block_metadata = $blocks_to_insert[0]['attrs']['metadata'] ?? array();
+					$metadata       = array( 'patternName' => $slug );
 
-					if ( ! empty( $pattern['title'] ) ) {
-						$metadata['name'] = sanitize_text_field( $pattern['title'] );
-					}
-
-					if ( ! empty( $pattern['description'] ) ) {
-						$metadata['description'] = sanitize_text_field( $pattern['description'] );
-					}
-
-					if ( ! empty( $pattern['categories'] ) && is_array( $pattern['categories'] ) ) {
-						$metadata['categories'] = array_map( 'sanitize_text_field', $pattern['categories'] );
+					foreach ( array(
+						'name'        => 'title',
+						'description' => 'description',
+						'categories'  => 'categories',
+					) as $key => $pattern_key ) {
+						$value = $pattern[ $pattern_key ] ?? $block_metadata[ $key ] ?? null;
+						if ( $value ) {
+							$metadata[ $key ] = 'categories' === $key && is_array( $value )
+								? array_map( 'sanitize_text_field', $value )
+								: sanitize_text_field( $value );
+						}
 					}
 
 					$blocks_to_insert[0]['attrs']['metadata'] = $metadata;

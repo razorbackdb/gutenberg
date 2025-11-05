@@ -58,6 +58,13 @@ class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 				'categories'  => array( 'featured' ),
 			)
 		);
+		register_block_pattern(
+			'core/existing-metadata',
+			array(
+				'title'   => 'Existing Metadata Pattern',
+				'content' => '<!-- wp:paragraph {"metadata":{"patternName":"core/existing-metadata-should-not-overwrite","description":"A existing metadata pattern.","categories":["cake"]}} -->Existing metadata content<!-- /wp:paragraph -->',
+			)
+		);
 	}
 
 	public function tear_down() {
@@ -65,6 +72,7 @@ class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 		unregister_block_pattern( 'core/single-root-with-forbidden-chars-in-attrs' );
 		unregister_block_pattern( 'core/with-attrs' );
 		unregister_block_pattern( 'core/nested-single' );
+		unregister_block_pattern( 'core/existing-metadata' );
 		parent::tear_down();
 	}
 
@@ -106,6 +114,11 @@ class Gutenberg_Resolve_Pattern_Blocks_Test extends WP_UnitTestCase {
 			'sanitized pattern attrs'       => array(
 				'<!-- wp:pattern {"slug":"core/single-root-with-forbidden-chars-in-attrs"} /-->',
 				'<!-- wp:paragraph {"metadata":{"patternName":"core/single-root-with-forbidden-chars-in-attrs","name":"Single Root Pattern","description":"A single root pattern.","categories":["text","bad\'); DROP TABLE wp_posts;\u002d\u002d","","evil\u0000null byte","category with html tags"]}} -->Single root content<!-- /wp:paragraph -->',
+			),
+			// Metadata is merged with existing metadata and existing metadata is preserved.
+			'existing metadata preserved'   => array(
+				'<!-- wp:pattern {"slug":"core/existing-metadata"} /-->',
+				'<!-- wp:paragraph {"metadata":{"patternName":"core/existing-metadata","name":"Existing Metadata Pattern","description":"A existing metadata pattern.","categories":["cake"]}} -->Existing metadata content<!-- /wp:paragraph -->',
 			),
 		);
 	}
