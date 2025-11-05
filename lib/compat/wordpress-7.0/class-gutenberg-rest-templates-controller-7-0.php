@@ -35,7 +35,7 @@ class Gutenberg_REST_Templates_Controller_7_0 extends WP_REST_Templates_Controll
 		 * Resolve pattern blocks so they don't need to be resolved client-side
 		 * in the editor, improving performance.
 		 */
-		$blocks        = parse_blocks( $item->content );
+		$blocks = parse_blocks( $item->content );
 		// This is the only difference between Core and this extension. It's using Gutenberg's function to resolve pattern blocks.
 		$blocks        = gutenberg_resolve_pattern_blocks( $blocks );
 		$item->content = serialize_blocks( $blocks );
