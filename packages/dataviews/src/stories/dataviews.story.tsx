@@ -77,7 +77,12 @@ const defaultLayouts = {
 	[ LAYOUT_TABLE ]: {},
 	[ LAYOUT_GRID ]: {},
 	[ LAYOUT_LIST ]: {},
-	[ LAYOUT_TIMELINE ]: {},
+	[ LAYOUT_TIMELINE ]: {
+		sort: {
+			field: 'datetime',
+			direction: 'asc' as const,
+		},
+	},
 };
 
 export const Default = ( { perPageSizes = [ 10, 25, 50, 100 ] } ) => {
@@ -426,12 +431,7 @@ export const GroupByLayout = () => {
 			fields={ fields }
 			onChangeView={ setView }
 			actions={ actions }
-			defaultLayouts={ {
-				[ LAYOUT_GRID ]: {},
-				[ LAYOUT_LIST ]: {},
-				[ LAYOUT_TABLE ]: {},
-				[ LAYOUT_TIMELINE ]: {},
-			} }
+			defaultLayouts={ defaultLayouts }
 		/>
 	);
 };
@@ -552,12 +552,7 @@ export const InfiniteScroll = () => {
 				onChangeView={ setView }
 				actions={ actions }
 				isLoading={ isLoadingMore }
-				defaultLayouts={ {
-					[ LAYOUT_GRID ]: {},
-					[ LAYOUT_LIST ]: {},
-					[ LAYOUT_TABLE ]: {},
-					[ LAYOUT_TIMELINE ]: {},
-				} }
+				defaultLayouts={ defaultLayouts }
 			/>
 		</>
 	);
@@ -688,7 +683,12 @@ const TimelineComponent = ( {
 			onChangeView={ setView }
 			actions={ orderEventActions }
 			defaultLayouts={ {
-				[ LAYOUT_TIMELINE ]: {},
+				[ LAYOUT_TIMELINE ]: {
+					sort: {
+						field: 'datetime',
+						direction: 'asc',
+					},
+				},
 			} }
 		/>
 	);
