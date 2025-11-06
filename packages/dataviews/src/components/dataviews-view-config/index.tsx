@@ -110,6 +110,14 @@ export function ViewTypeMenu() {
 										if ( 'layout' in viewWithoutLayout ) {
 											delete viewWithoutLayout.layout;
 										}
+										if (
+											! config.supports.includes(
+												FEATURE_SORTING
+											) &&
+											'sort' in viewWithoutLayout
+										) {
+											delete viewWithoutLayout.sort;
+										}
 										return onChangeView( {
 											...viewWithoutLayout,
 											type: e.target.value,
